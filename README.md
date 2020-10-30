@@ -3,6 +3,9 @@
 
 GEMMAX can be downloaded https://github.com/YuxinSong-prog/GEMMAX.
 
+## Input Files
+GEMMAX requires three main input files : plink BED genotype file, phenotype file and relatedness matrix .PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed.
+
 ## Association Tests
 
 Currently GEMMAX takes only PLINK BED types of input format.<br>
