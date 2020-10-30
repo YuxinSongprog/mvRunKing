@@ -14,9 +14,7 @@ Relatedness matrix is a  n × n matrix, where each row and each column correspon
 
 ## Association Tests
 
-Currently GEMMAX takes only PLINK BED types of input format.<br>
-
-We can specify a different column for association tests by using “-n [num]”, where “-n 1” uses the original first column as phenotypes, and “-n 2” uses the second column, and so on. 
+Currently GEMMAX takes only PLINK BED types of input format. We can specify a different column for association tests by using “-n [num]”, where “-n 1” uses the original first column as phenotypes, and “-n 2” uses the second column, and so on. 
 
 The basic usages for association analysis are:
 ```
