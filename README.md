@@ -3,10 +3,13 @@
 
 GEMMAX can be downloaded https://github.com/YuxinSong-prog/GEMMAX.
 
-## Association test
+## Association Tests
 
 Currently GEMMAX takes only PLINK BED types of input format.<br>
-GEMMAX is run from the command line :<br>
+The basic usages for association analysis are:
 ```
-GEMMAX -bfile plinkfile -p phenofile -k kinshipfile -SeparateGEMMAX/-JiontGEMMAX -n traits -o outputfilename
+./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparateGEMMAX -n [num1] [num2]...[numd] -o [outputfilename]
+
+./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
+
 ```
