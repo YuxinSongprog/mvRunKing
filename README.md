@@ -8,7 +8,18 @@ GEMMAX requires three main input files : PLINK BED genotype file, phenotype file
 #### PLINK BED genotype file
 PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed. 
 #### Phenotype file
-Phenotype file that only contains phenotypic variates, and the order of individuals should be the same as genotype file. One should include multiple correlated phenotypes in multiple columns in the phenotype file. <br>
+Phenotype file that only contains phenotypic variates, and the order of individuals should be the same as genotype file. One should include multiple correlated phenotypes in multiple columns in the phenotype file. Here is an example of the header and first 8 rows for the *d*  phenotypes:  <br>
+|phenotype 1| phenotype 2| phenotype 3|...|phenotype d|
+| ---------- | :-----------:  | :-----------: | :-----------:| :-----------:|
+|1 |4.9| 1.1|...|2.3|
+|1.1 |4.6| 2.2|...|2.4|
+|1.2 |8| 3.8|...|2.2|
+|2.1 |10.1| 1.3|...|3.2|
+|3.1 |14.9| 1.4|...|3.2|
+|3.1 |16.2| 2.7|...|2.3|
+|3.2 |15.2| 3.6|...|2.3|
+|3 |14.3| 4.5|...|4.2|
+...
 #### Relatedness matrix file
 Relatedness matrix is a  n × n matrix, where each row and each column corresponds to individuals in the same order as in the .fam file, and *i*th row and *j*th column is a number indicating the relatedness value between *i*th and *j*th individuals. <br>
 
