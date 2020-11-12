@@ -1,7 +1,7 @@
 # GEMMAX
 ## Downloading GEMMAX
 
-GEMMAX can be downloaded from https://github.com/YuxinSong-prog/GEMMAX.
+GEMMAX can be downloaded from https://github.com/RunKingProgram/GEMMAX.
 
 ## Input Files
 GEMMAX requires three main input files : PLINK BED genotype file, phenotype file and relatedness matrix.<br>
