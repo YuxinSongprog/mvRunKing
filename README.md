@@ -34,3 +34,12 @@ The basic usages for association analysis are:
 ./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
+Significance level of the QTN candidates for Jiont association tests can be set by "-pnr [threshold]"
+
+```
+./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -pnr [threshold] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
+
+```
+
+
+
