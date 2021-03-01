@@ -44,12 +44,3 @@ The basic usages for association analysis are:
 ./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
-Significance level of the QTN candidates for Jiont association tests can be set by "-pnr [threshold]"
-
-```
-./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -pnr [threshold] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
-
-```
-
-
-
