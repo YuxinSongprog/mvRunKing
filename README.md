@@ -8,7 +8,9 @@ mvRunKing can be downloaded from https://github.com/RunKingProgram/mvRunKing.
 mvRunKing runs on Linux, MAC OSX and Windows (Windows Subsystem for Linux). The runtime has the following dependencies:
 
 C++ tool chain >= 5.5.0 
+
 GNU Science library (GSL) 2.x
+
 zlib
 
 ## Input Files
