@@ -1,7 +1,7 @@
-# GEMMAX
-## Downloading GEMMAX
+# mvRunKing
+## Downloading mvRunKing
 
-GEMMAX can be downloaded from https://github.com/RunKingProgram/GEMMAX.
+GEMMAX can be downloaded from https://github.com/RunKingProgram/mvRunKing.
 
 ## Input Files
 GEMMAX requires three main input files : PLINK BED genotype file, phenotype file and relatedness matrix.<br>
@@ -25,19 +25,19 @@ Relatedness matrix is a  n × n matrix, where each row and each column correspon
 
 ## Association Tests
 
-Currently GEMMAX takes only PLINK BED files as input format. You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
+Currently mvRunKing takes only PLINK BED files as input format. You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
 
 The basic usages for association analysis are:
 ```
-./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparateGEMMAX -n [num1] [num2]...[numd] -o [outputfilename]
+./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparateGEMMAX -n [num1] [num2]...[numd] -o [outputfilename]
 
-./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
+./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
 Significance level of the QTN candidates for Jiont association tests can be set by "-pnr [threshold]"
 
 ```
-./GEMMAX -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -pnr [threshold] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
+./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -pnr [threshold] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
 
