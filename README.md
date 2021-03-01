@@ -39,9 +39,9 @@ mvRunKing is a command-line program. Open up a command prompt or terminal window
 
 The basic usages for association analysis are:
 ```
-./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparateGEMMAX -n [num1] [num2]...[numd] -o [outputfilename]
+./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparatemvRunKing -n [num1] [num2]...[numd] -o [outputfilename]
 
-./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontGEMMAX -n [num1] [num2]...[numd]  -o [outputfilename]
+./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
 Significance level of the QTN candidates for Jiont association tests can be set by "-pnr [threshold]"
