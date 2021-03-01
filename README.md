@@ -35,7 +35,7 @@ Relatedness matrix is a  n × n matrix, where each row and each column correspon
 
 ## Running mvRunKing
 
-mvRunKing is a command-line program. Open up a command prompt or terminal window and perform all analyses by typing commands. Software usage is very similar to GEMMA software. “-bfile [plinkfile]” specifies PLINK BED files prefix; “-p [filename]” specifies phenotype file name; “-k [kinshipfile]” specifies relatedness matrix file name; and “-o [outputfilename]” specifies output file prefix. You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
+mvRunKing is a command-line program. Open up a command prompt or terminal window and perform all analyses by typing commands. Software usage is very similar to GEMMA software. 
 
 The basic usages for association analysis are:
 ```
@@ -44,3 +44,4 @@ The basic usages for association analysis are:
 ./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
+Where the “-SeparatemvRunKing” performs a test at once; “-JiontmvRunKing” performs Joint association analysis; “-bfile [plinkfile]” specifies PLINK BED files prefix; “-p [filename]” specifies phenotype file name; “-k [kinshipfile]” specifies relatedness matrix file name and “-o [outputfilename]” specifies output file prefix. You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
