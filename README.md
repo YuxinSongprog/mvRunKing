@@ -16,7 +16,7 @@ mvRunKing requires three main input files : genotype file, phenotype file and re
 Genotype file consists of three PLINK BED files with the same name. For example, Genotype.bed, Genotype.bim and Genotype.fam.
 
 #### Phenotype file
-Phenotype file that only contains adjusted phenotypic variates, and the order of individuals should be the same as genotype file. One should include multiple correlated phenotypes in multiple columns in the phenotype file. Here is an example of the header and first 8 rows for the *d*  phenotypes:  <br>
+Phenotype file that only contains phenotypic variates which should to be adjust for all covariates, and the order of individuals should be the same as genotype file. One should include multiple correlated phenotypes in multiple columns in the phenotype file. Here is an example of the header and first 8 rows for the *d*  phenotypes:  <br>
 |phenotype 1| phenotype 2| phenotype 3|...|phenotype d|
 | ---------- | :-----------:  | :-----------: | :-----------:| :-----------:|
 |1 |4.9| 1.1|...|2.3|
