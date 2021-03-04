@@ -28,6 +28,8 @@ Phenotype file is a n × d matrix, which contains multiple justified phenotypes 
 |3.2 |15.2| 3.6|...|2.3|
 |3 |14.3| 4.5|...|4.2|
 ...
+
+
 You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
 
 #### GRM file
