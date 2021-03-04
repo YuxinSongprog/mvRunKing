@@ -16,7 +16,7 @@ mvRunKing requires three main input files : genotype file, phenotype file and ge
 Genotype file consists of three PLINK BED files with the same name. For example, Genotype.bed, Genotype.bim and Genotype.fam.
 
 #### Phenotype file
-Phenotype file is a n × d matrix, which contains multiple justified phenotypes for some fixed factors including population means, stratification, sex and age so on as multiple column. <br>
+Phenotype file is a n × d matrix, which contains multiple justified phenotypes for some fixed factors including population means, stratification, sex and age so on as multiple column. Each row indicates the phenotype value for each individual in turn, in the same order as in genotype file. <br>
 |phenotype 1| phenotype 2| phenotype 3|...|phenotype d|
 | ---------- | :-----------:  | :-----------: | :-----------:| :-----------:|
 |1 |4.9| 1.1|...|2.3|
@@ -28,8 +28,14 @@ Phenotype file is a n × d matrix, which contains multiple justified phenotypes 
 |3.2 |15.2| 3.6|...|2.3|
 |3 |14.3| 4.5|...|4.2|
 ...
+You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
+
 #### GRM file
-GRM file is a n × n matrix, where each row and each column corresponds to individuals in the same order as in the .fam file, and *i*th row and *j*th column is a number indicating the relatedness value between *i*th and *j*th individuals. <br>
+GRM file is a n × n matrix, how to calculate an GRM with the Genotype file is: <br>
+```
+./mvRunKing -bfile [Genotype] -gk 2 -o [GRM]
+```
+where the “-bfile [Genotype]” specifies genotype file name and “-o [GRM]” specifies output GRM name.
 
 ## Running mvRunKing
 
@@ -37,9 +43,9 @@ mvRunKing is a command-line program. Open up a command prompt or terminal window
 
 The basic usages for association analysis are:
 ```
-./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -SeparatemvRunKing -n [num1] [num2]...[numd] -o [outputfilename]
+./mvRunKing -bfile [Genotype] -p [Phenotype] -k [GRM] -SeparatemvRunKing -n [num1] [num2]...[numd] -o [output]
 
-./mvRunKing -bfile [plinkfile] -p [phenofile] -k [kinshipfile] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
+./mvRunKing -bfile [Genotype] -p [Phenotype] -k [GRM] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
 
 ```
-Where the “-SeparatemvRunKing” performs a test at once; “-JiontmvRunKing” performs Joint association analysis; “-bfile [plinkfile]” specifies PLINK BED files prefix; “-p [filename]” specifies phenotype file name; “-k [kinshipfile]” specifies relatedness matrix file name and “-o [outputfilename]” specifies output file prefix. You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
+Where the “-SeparatemvRunKing” performs a test at once; “-JiontmvRunKing” performs Joint association analysis; “-bfile [Genotype]” specifies genotype file name; “-p [Phenotype]” specifies phenotype file name; “-k [GRM]” specifies relatedness matrix file name and “-o [output]” specifies output file name. 
