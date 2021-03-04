@@ -33,7 +33,7 @@ Phenotype file is a n × d matrix, which contains multiple justified phenotypes 
 You can specify different columns of phenotypes for association tests by using “-n [num1] [num2]...[numd]”, where “-n 1 2 ” uses the original 1st and 2nd columns as phenotypes, and “-n 2 3 5” uses the 2nd, 3rd and 5th columns, and so on. 
 
 #### GRM file
-GRM file is a n × n matrix, how to calculate an GRM with the Genotype file is: <br>
+GRM file is a n × n matrix, which could be calculated by: <br>
 ```
 ./mvRunKing -bfile [Genotype] -gk 2 -o [GRM]
 ```
