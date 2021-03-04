@@ -10,13 +10,13 @@ mvRunKing runs on Linux, MAC OSX and Windows (Windows Subsystem for Linux). The 
 C++ tool chain >= 5.5.0, GNU Science library (GSL) 2.x and zlib.
 
 ## Input Files
-mvRunKing requires three main input files : genotype file, phenotype file and relatedness matrix file.<br>
+mvRunKing requires three main input files : genotype file, phenotype file and genomic relationship matrix (GRM) file.<br>
 
 #### Genotype file
 Genotype file consists of three PLINK BED files with the same name. For example, Genotype.bed, Genotype.bim and Genotype.fam.
 
 #### Phenotype file
-Phenotype file that only contains phenotypic variates which should to be adjust for all covariates, and the order of individuals should be the same as genotype file. One should include multiple correlated phenotypes in multiple columns in the phenotype file. Here is an example of the header and first 8 rows for the *d*  phenotypes:  <br>
+Phenotype file is a n × d matrix, which contains multiple justified phenotypes for some fixed factors including population means, stratification, sex and age so on as multiple column. <br>
 |phenotype 1| phenotype 2| phenotype 3|...|phenotype d|
 | ---------- | :-----------:  | :-----------: | :-----------:| :-----------:|
 |1 |4.9| 1.1|...|2.3|
@@ -28,8 +28,8 @@ Phenotype file that only contains phenotypic variates which should to be adjust 
 |3.2 |15.2| 3.6|...|2.3|
 |3 |14.3| 4.5|...|4.2|
 ...
-#### Relatedness matrix file
-Relatedness matrix is a  n × n matrix, where each row and each column corresponds to individuals in the same order as in the .fam file, and *i*th row and *j*th column is a number indicating the relatedness value between *i*th and *j*th individuals. <br>
+#### GRM file
+GRM file is a n × n matrix, where each row and each column corresponds to individuals in the same order as in the .fam file, and *i*th row and *j*th column is a number indicating the relatedness value between *i*th and *j*th individuals. <br>
 
 ## Running mvRunKing
 
