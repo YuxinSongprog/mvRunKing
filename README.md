@@ -47,7 +47,7 @@ The basic usages for association analysis are:
 ```
 ./mvRunKing -bfile [Genotype] -p [Phenotype] -k [GRM] -SeparatemvRunKing -n [num1] [num2]...[numd] -o [output]
 
-./mvRunKing -bfile [Genotype] -p [Phenotype] -k [GRM] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [outputfilename]
+./mvRunKing -bfile [Genotype] -p [Phenotype] -k [GRM] -JiontmvRunKing -n [num1] [num2]...[numd]  -o [output]
 
 ```
 Where the “-SeparatemvRunKing” performs a test at once; “-JiontmvRunKing” performs Joint association analysis; “-bfile [Genotype]” specifies genotype file name; “-p [Phenotype]” specifies phenotype file name; “-k [GRM]” specifies relatedness matrix file name and “-o [output]” specifies output file name. 
