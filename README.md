@@ -39,7 +39,7 @@ GRM file is a n × n matrix, which could be calculated by: <br>
 ```
 where the “-bfile [Genotype]” specifies genotype file name and “-o [GRM]” specifies output GRM name.
 
-## Running mvRunKing
+## Usage
 
 mvRunKing is a command-line program. Open up a command prompt or terminal window and perform all analyses by typing commands. Software usage is very similar to GEMMA software. 
 
